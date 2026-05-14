@@ -1,3 +1,6 @@
+
+USE IntroducaoSQL;
+
 CREATE TABLE clientes(
 ID INT AUTO_INCREMENT,
 Nome VARCHAR(100) NOT NULL,
@@ -29,6 +32,6 @@ PRIMARY KEY (ID)
 
 
 
-ALTER TABLE venda
+produto ALTER TABLE venda
 ADD FOREIGN KEY (ClienteID) REFERENCES cliente(ID),
 ADD FOREIGN KEY (ProdutoID) REFERENCES produto(ID);
